@@ -177,7 +177,7 @@ with gr.Blocks(title="NovoMD - Molecular Property Calculator") as demo:
     This describes molecules with public cheminformatics. It does not predict
     ADMET, pKa, solubility, or binding. For that, see NovoMCP.
 
-    [GitHub](https://github.com/realariharrison/NovoMD) | [PyPI](https://pypi.org/project/novomd/)
+    [GitHub](https://github.com/ariharrisonlab/NovoMD) | [PyPI](https://pypi.org/project/novomd/)
     """)
 
     with gr.Row():
@@ -256,7 +256,7 @@ with gr.Blocks(title="NovoMD - Molecular Property Calculator") as demo:
     Install it with `pip install novomd`, or run the REST service:
 
     ```bash
-    docker run -d -p 8010:8010 -e NOVOMD_API_KEY="your-key" ghcr.io/realariharrison/novomd:latest
+    docker run -d -p 8010:8010 -e NOVOMD_API_KEY="your-key" ghcr.io/ariharrisonlab/novomd:latest
     ```
 
     MIT License | Built with RDKit and Gradio
