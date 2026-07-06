@@ -6,7 +6,7 @@
 
 **local-first molecular property calculation**
 
-[![CI](https://github.com/realariharrison/NovoMD/actions/workflows/ci.yml/badge.svg)](https://github.com/realariharrison/NovoMD/actions/workflows/ci.yml)
+[![CI](https://github.com/ariharrisonlab/NovoMD/actions/workflows/ci.yml/badge.svg)](https://github.com/ariharrisonlab/NovoMD/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-B8704B.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-2D2A26.svg)](https://www.python.org/downloads/)
 
@@ -87,7 +87,7 @@ For networked or containerized use, run the same core behind FastAPI.
 docker run -d -p 8010:8010 \
   -e NOVOMD_API_KEY="your-secure-api-key" \
   --name novomd \
-  ghcr.io/realariharrison/novomd:latest
+  ghcr.io/ariharrisonlab/novomd:latest
 
 curl http://localhost:8010/health
 ```
@@ -301,8 +301,8 @@ NovoMD runs locally by default; no molecular data leaves your machine. For the R
 
 Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-- **Issues**: [GitHub Issues](https://github.com/realariharrison/NovoMD/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/realariharrison/NovoMD/discussions)
+- **Issues**: [GitHub Issues](https://github.com/ariharrisonlab/NovoMD/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ariharrisonlab/NovoMD/discussions)
 
 ## License
 
@@ -317,7 +317,7 @@ Built with [FastAPI](https://fastapi.tiangolo.com/) and [RDKit](https://www.rdki
   title = {NovoMD: Local-First Molecular Property Calculation},
   author = {NovoMCP},
   year = {2025},
-  url = {https://github.com/realariharrison/NovoMD}
+  url = {https://github.com/ariharrisonlab/NovoMD}
 }
 ```
 

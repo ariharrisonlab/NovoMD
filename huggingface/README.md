@@ -52,7 +52,7 @@ pip install novomd
 ## Links
 
 - [PyPI](https://pypi.org/project/novomd/)
-- [GitHub Repository](https://github.com/realariharrison/NovoMD)
+- [GitHub Repository](https://github.com/ariharrisonlab/NovoMD)
 
 ## License
 

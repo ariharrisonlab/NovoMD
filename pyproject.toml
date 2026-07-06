@@ -79,10 +79,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/realariharrison/NovoMD"
-Documentation = "https://github.com/realariharrison/NovoMD#readme"
-Repository = "https://github.com/realariharrison/NovoMD.git"
-Issues = "https://github.com/realariharrison/NovoMD/issues"
+Homepage = "https://github.com/ariharrisonlab/NovoMD"
+Documentation = "https://github.com/ariharrisonlab/NovoMD#readme"
+Repository = "https://github.com/ariharrisonlab/NovoMD.git"
+Issues = "https://github.com/ariharrisonlab/NovoMD/issues"
 
 [project.scripts]
 novomd = "novomd.cli:main"

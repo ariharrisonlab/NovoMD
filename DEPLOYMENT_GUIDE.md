@@ -6,7 +6,7 @@
 
 ```bash
 cd /Users/ariharrison/Documents/GitHub/NovoMD
-git remote add origin https://github.com/realariharrison/NovoMD.git
+git remote add origin https://github.com/ariharrisonlab/NovoMD.git
 ```
 
 ### 2. Push Code
@@ -17,7 +17,7 @@ git push -u origin main
 
 ### 3. Configure Repository Settings
 
-On GitHub (https://github.com/realariharrison/NovoMD):
+On GitHub (https://github.com/ariharrisonlab/NovoMD):
 
 1. **Add Description**: "Open-source REST API for molecular dynamics simulations, protein-ligand docking, and conformational analysis"
 2. **Add Topics**:
@@ -45,7 +45,7 @@ After pushing, test the repository:
 ```bash
 # Clone in a new location
 cd /tmp
-git clone https://github.com/realariharrison/NovoMD.git
+git clone https://github.com/ariharrisonlab/NovoMD.git
 cd NovoMD
 
 # Test with Docker
@@ -99,8 +99,8 @@ curl http://localhost:8010/health
 ## Next Steps
 
 1. **GitHub repository**
-   - Account: `realariharrison`
-   - Repository: `NovoMD` (https://github.com/realariharrison/NovoMD)
+   - Account: `ariharrisonlab`
+   - Repository: `NovoMD` (https://github.com/ariharrisonlab/NovoMD)
 
 2. **Push Code**
    - Follow instructions above
