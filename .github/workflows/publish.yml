@@ -8,8 +8,6 @@ name: Publish to PyPI
 on:
   push:
     tags: ['v*']
-  release:
-    types: [published]
 
 jobs:
   build:
@@ -53,3 +51,26 @@ jobs:
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
+
+  github-release:
+    # After a successful PyPI publish, create the matching GitHub Release so the
+    # tag, PyPI, and the Releases page always move together (no stale "Latest").
+    needs: publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Create GitHub Release from the tag
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/release_notes.py "$GITHUB_REF_NAME" > /tmp/notes.md
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo "Release $GITHUB_REF_NAME already exists; leaving it as-is."
+          else
+            gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" \
+              --notes-file /tmp/notes.md --latest --verify-tag
+          fi
+
