@@ -60,10 +60,10 @@ curl http://localhost:8010/health
 
 ## What Was Cleaned/Removed
 
-### ❌ Removed (Proprietary/Internal)
+### Not included in the standalone build
 - `shared/` directory (47 files of internal libraries)
 - `main.py` (old stateful version with Azure SQL)
-- `database_client.py` (proprietary database client)
+- `database_client.py` (not needed for the standalone build)
 - `setup-aws-infrastructure.sh` (AWS deployment scripts)
 - `ecs-task-definition.json` (AWS ECS config)
 - `.github/` workflows (AWS CI/CD pipelines)
@@ -141,6 +141,6 @@ curl http://localhost:8010/health
 
 ---
 
-**Original Source**: Derived from NovoQuantNexus OpenMD service (proprietary)
+**Project**: NovoMD — a standalone, MIT-licensed molecular-descriptor tool
 **Open Source Version**: NovoMD v1.0.0
 **Date**: January 2025
